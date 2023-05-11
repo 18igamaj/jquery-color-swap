@@ -7,10 +7,10 @@ function onReady(){
 }
 let num = 0
 function divHandler(event){
-    event.preventDefault()
-$('#div-1').append(`<div><p>${num}</p><button 
-class='del-btn'>Delete</button><button class='yell-btn'>Yellow</button></div>`)
+    // event.preventDefault()
 num++
+    $('#div-1').append(`<div><p>${num}</p><button 
+class='del-btn'>Delete</button><button class='yell-btn'>Yellow</button></div>`)
 $('#pCount').text(num)
 }
 function deleteHandler() {
